@@ -31,17 +31,17 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity multiplexer is
     Port ( i0 : in  STD_LOGIC;
-           i1 : in  STD_LOGIC;
-           i2 : in  STD_LOGIC;
-           i3 : in  STD_LOGIC;
-           i4 : in  STD_LOGIC;
-           i5 : in  STD_LOGIC;
-		   i6 : in  STD_LOGIC;
-		   i7 : in  STD_LOGIC;
-		   s0 : in  STD_LOGIC;
-		   s1 : in  STD_LOGIC;
-		   s2 : in  STD_LOGIC;
-		   output : out  STD_LOGIC);
+	i1 : in  STD_LOGIC;
+	i2 : in  STD_LOGIC;
+	i3 : in  STD_LOGIC;
+	i4 : in  STD_LOGIC;
+	i5 : in  STD_LOGIC;
+	i6 : in  STD_LOGIC;
+	i7 : in  STD_LOGIC;
+	s0 : in  STD_LOGIC;
+	s1 : in  STD_LOGIC;
+	s2 : in  STD_LOGIC;
+	output : out  STD_LOGIC);
 end multiplexer;
 
 architecture Behavioral of multiplexer is
