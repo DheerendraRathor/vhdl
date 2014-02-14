@@ -30,7 +30,8 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity multiplexer is
-    Port ( i0 : in  STD_LOGIC;
+    Port ( 
+	i0 : in  STD_LOGIC;
 	i1 : in  STD_LOGIC;
 	i2 : in  STD_LOGIC;
 	i3 : in  STD_LOGIC;
@@ -47,13 +48,14 @@ end multiplexer;
 architecture Behavioral of multiplexer is
 
 begin
-output <= i0 when s0 = '0' and s1 = '0' and s2 = '0' else 
+output <= 
+	i0 when s0 = '0' and s1 = '0' and s2 = '0' else 
 	i1 when s0 = '0' and s1 = '0' and s2 = '1' else 
-			 i2 when s0 = '0' and s1 = '1' and s2 = '0' else  
-			 i3 when s0 = '0' and s1 = '1' and s2 = '1' else
-			 i4 when s0 = '1' and s1 = '0' and s2 = '0' else
-			 i5 when s0 = '1' and s1 = '0' and s2 = '1' else
-			 i6 when s0 = '1' and s1 = '1' and s2 = '0' else
-			 i7 when s0 = '1' and s1 = '1' and s2 = '1' ;
+	i2 when s0 = '0' and s1 = '1' and s2 = '0' else  
+	i3 when s0 = '0' and s1 = '1' and s2 = '1' else
+	i4 when s0 = '1' and s1 = '0' and s2 = '0' else
+	i5 when s0 = '1' and s1 = '0' and s2 = '1' else
+	i6 when s0 = '1' and s1 = '1' and s2 = '0' else
+	i7 when s0 = '1' and s1 = '1' and s2 = '1' ;
 end Behavioral;
 
