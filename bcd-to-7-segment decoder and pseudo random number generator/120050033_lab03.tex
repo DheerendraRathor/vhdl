@@ -274,7 +274,8 @@ variable temp :std_logic := '0';
 begin
 case gen is
 	when '1' =>
-		temp := output_temp(7) xor output_temp(5) xor output_temp(4) xor output_temp(3);
+		temp := output_temp(7) xor output_temp(5) 
+				xor output_temp(4) xor output_temp(3);
 		output_temp(7 downto 1) := output_temp(6 downto 0);
 		output_temp(0) := temp;
 		output <= output_temp;
